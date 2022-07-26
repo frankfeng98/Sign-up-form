@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo-background">
+                <img src="media/logo.png" alt="Logo for The Odin Project">
+                <div class="logo-word">Dreamland</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="surrounding top">
+                <div class="top-words">This is not a real online service but a personal project.<br>
+                    I hope your dream can come true.<br>Sign up <em>now</em> to get started.</div>
+                <div class="top-words">You <em>know</em> what to do.</div>
+            </div>
+            <div class="form">
+                <form action="" method="get" class="sign-up-form" id="my-form">
+                    <legend>Let's do this!</legend>
+                    <div class="input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" title="Please enter your first name." placeholder="Jane" name="firstName" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" title="Please enter your last name." placeholder="Doe" name="lastName" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" title="Please enter a valid email address." placeholder="example@email.com" name="email" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="phoneNum">Phone Number</label>
+                        <input type="number" id="phoneNum" title="Please enter a valid phoneNum." placeholder="(000) 000-0000" name="phone" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="password1">Password</label>
+                        <input type="password" id="password1" title="Please enter a password." name="password" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" title="Please enter a password." name="password" required>
+                    </div>
+                    <div class="error-wrapper">
+                        <div class="error-msg">*Passwords do not match.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="surrounding bottom">
+                <button type="submit" form="my-form">Create Account</button>
+                <p>Already have an account?<span class="log-in"> Log in</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
