@@ -184,7 +184,10 @@ input[type='password']{
     font-size: 1rem;
 }
 
-input:invalid,
+input:invalid{
+    border-color: red;
+}
+
 .error{
     border-color: red;
 }
@@ -208,7 +211,7 @@ input:focus{
     position: absolute;
     color:rgb(228, 109, 109);
     font-size: 0.8rem;
-    left: ;
+    left: 0.1rem;
     top: 0.1rem;
 }
   
